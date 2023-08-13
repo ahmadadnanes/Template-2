@@ -870,4 +870,309 @@ header nav {
     padding-bottom: 60px;
 }
 
+.price .container .pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.price .pricing .box{
+    background-color: #fcfcfc;
+    border-top: 1px solid var(--main-color);
+}
+
+.price .box .header h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.price .box .header h2{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.price .box .header h2::before{
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+  
+}
+
+.pricing .box .header h2::after {
+    content: "/Mo";
+    font-size: 20px;
+    position: relative;
+    right: -15px;
+  }
+
+.price .box .body{
+    padding: 30px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.price .box .body li{
+    padding: 15px;
+    text-transform: uppercase;
+    
+}
+
+.price .box .body li:not(:last-of-type){
+    border-bottom: 1px solid var(--main-color);
+}
+
+.price .box .body li:last-of-type{
+    padding-bottom: 0px;
+}
+
+.price .box .body li:first-of-type{
+    padding-top: 0px;
+}
+
+.price .box .button{
+    margin-top: 20px;
+}
+
+.price .box button{
+    padding: 20px;
+    text-transform: uppercase;
+    border: 1px solid var(--main-color);
+    background-color: white;
+}
+
+.price .con{
+    text-align: center;
+}
+
+.price .con h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+.price .con button{
+    margin-top: 20px;
+}
+
+.price .con button{
+    padding: 20px;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+}
 /* end price */
+
+/* start sub */
+.sub{
+    padding-top: 60px;
+    padding-bottom: 60px ;
+    background-image: url(../images/subscribe.jpg);
+    position: relative;
+    background-size: cover;
+}
+
+.sub::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.sub .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sub form{
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    border: 1px solid white;
+}
+@media (min-width:1200px) {
+    .sub form{
+        margin-right: 50px;
+    }
+}
+@media(max-width:1200px){
+    .sub form{
+        margin-bottom: 50px;
+    }
+}
+
+.sub form input{
+    background:none;
+    padding: 20px;
+    border: none;
+    width: calc(100% - 128px);
+}
+
+.sub form input::placeholder{
+    color: white;
+}
+
+.sub form button{
+    padding: 20px;
+    background-color: var(--main-color);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sub .container .text{
+    color: white;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+/* end sub */
+
+/* start contact */
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+  .contact .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    .contact .content {
+      flex-direction: column;
+    }
+  }
+  .contact .content form {
+    flex-basis: 70%;
+  }
+  .contact .content form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .contact .content form .main-input:focus {
+    outline: none;
+  }
+  .contact .content form textarea.main-input {
+    height: 200px;
+  }
+  .contact .content form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .contact .content .info {
+    flex-basis: 25%;
+  }
+  @media (max-width: 767px) {
+    .contact .content .info {
+      order: -1;
+      text-align: center;
+    }
+  }
+  .contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .contact .content .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  .contact .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+  }
+  @media (max-width: 767px) {
+    .contact .content .info h4:nth-of-type(2) {
+      margin-top: 30px;
+    }
+  }
+  .contact .content .info address {
+    color: #777;
+    line-height: 2;
+  }
+  @media (max-width: 767px) {
+    .contact .content .info address {
+      margin-bottom: 40px;
+    }
+  }
+/* end contact */
+
+/* start footer */
+footer{
+    padding-top: 60px;
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top: 0;
+    background-color: rgb(0 0 0 / 50%);
+
+}
+
+footer .container{
+    position: relative;
+    color: white;
+}
+
+footer .image{
+    margin-bottom: 50px;
+}
+
+footer .text{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+footer ul li{
+    padding: 15px;
+}
+
+footer li i{
+    font-size: 20px;
+}
+
+footer .rights h3{
+    padding-bottom: 20px;
+}
+/* end footer */
