@@ -1038,6 +1038,7 @@ header nav {
     border: none;
     width: calc(100% - 128px);
     color: white;
+    outline: none;
 }
 
 .sub form input::placeholder{
