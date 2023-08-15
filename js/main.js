@@ -31,9 +31,9 @@ up.onclick = () =>{
 
 i = 0 ; images = [];
 
-images[0] = '../images/landing.jpg';
-images[1] = '../images/shuffle-04.jpg';
-images[2] = '../images/subscribe.jpg';
+images[0] = "../images/landing.jpg";
+images[1] = "../images/shuffle-04.jpg";
+images[2] = "../images/subscribe.jpg";
 
 bull1 = document.getElementById("bull1");
 bull2 = document.getElementById("bull2");
@@ -41,17 +41,17 @@ bull3 = document.getElementById("bull3");
 land = document.getElementById("land");
 
 bull1.onclick = () =>{
-    land.style.backgroundImage = `url(${images[0]})`;
+    land.style.backgroundImage = `url(${images[0]})`
     addactive(bull1);
 }
 
 bull2.onclick = () =>{
-    land.style.backgroundImage = `url(${images[1]})`;
+    land.style.backgroundImage = `url(${images[1]})`
     addactive(bull2);
 }
 
 bull3.onclick = () =>{
-    land.style.backgroundImage = `url(${images[2]})`;
+    land.style.backgroundImage = `url(${images[2]})`
     addactive(bull3);
 }
 
@@ -68,7 +68,7 @@ left = document.getElementById("left");
 
 
 right.onclick = () =>{
-    land.style.backgroundImage = `url(${images[i]})`;
+    land.style.backgroundImage = `url(${images[i]})`
 
     if(i < images.length - 1)
         i++;
@@ -77,7 +77,7 @@ right.onclick = () =>{
 }
 
 left.onclick = () =>{
-    land.style.backgroundImage = `url(${images[i]})`;
+    land.style.backgroundImage = `url(${images[i]})`
 
     if(i > 0)
         i--;
@@ -89,7 +89,7 @@ const media = window.matchMedia('(max-width: 1209px)');
 
 if(media.matches){
     function changeimg() {
-        land.style.backgroundImage = `url(${images[i]})`;
+        land.style.backgroundImage = `url(${images[i]})`
         if(i < images.length - 1)
             i++;
         else
