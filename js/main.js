@@ -1,5 +1,6 @@
 let btn = document.querySelector("button");
 let ul = document.getElementById("classic");
+let time = 2000;
 btn.onclick = function(){
     if(ul.className == "classic active"){
         ul.classList.remove("active");
@@ -82,6 +83,20 @@ left.onclick = () =>{
         i--;
     else
         i = 0;
+}
+
+const media = window.matchMedia('(max-width: 1209px)');
+
+if(media.matches){
+    function changeimg() {
+        land.style.backgroundImage = `url(${images[i]})`;
+        if(i < images.length - 1)
+            i++;
+        else
+            i = 0;
+        setTimeout("changeimg()" , time)
+    }
+    window.onload = changeimg();
 }
 
 
