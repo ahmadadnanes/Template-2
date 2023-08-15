@@ -315,11 +315,17 @@ header nav {
     color: white;
 }
 
-.landing .fa-angle-left {
+.landing .left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     left: 30px;
 }
 
-.landing .fa-angle-right {
+.landing .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 30px;
 }
 
