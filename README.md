@@ -1,2 +1,2 @@
 # Template-2
-https://ahmadadnanes.github.io/Template-2/
+https://rococo-melba-823481.netlify.app/
